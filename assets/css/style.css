@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+    padding-left: 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.chat-container {
+    width: calc(100vw - 40px);
+    height: calc(100vh - 40px);
+    background-color: aliceblue;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.sidebar {
+    margin-top: 0px;
+    margin-left: 1px;
+    min-width: calc(200px - 1px);
+    width: calc(20% - 1px);
+    height: calc(100% - 2px);
+    background-color: aquamarine;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.profile-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 100px;
+}
+
+.profile-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.profile .avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.profile .wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    min-width: 80px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.profile .wrapper .name{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.profile .wrapper .status{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: blue;
+}
+
+.action-btn {
+    width: 36px;
+    height: 36px;
+    background-color: gray;
+    border: 0px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.dialog-menu {
+    border-top: 1px solid gray;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start
+}
+
+.btn-chat {
+    border: 0px;
+    background-color: green;
+    color: white;
+    font-size: 24px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+}
+
+.chats {
+    margin-top: 20px;
+    border-top: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    height: calc(100vh - 232px);
+}
+
+.chat {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content:center;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.chat .avatar {
+    border-radius: 18px;
+    margin: 20px;   
+}
+
+.chat .wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content:center;
+}
+
+.chat .wrapper .name {
+    max-width: 100px;
+    font-size: 16px;
+}
+
+.chat .wrapper .message {
+    font-size: 16px;
+    color: green
+}
+
+.dialog-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 0px;
+    margin-right: 1px;
+    width: calc(80% - 2px);
+    height: calc(100% - 2px);
+    background-color: antiquewhite;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.star .logo{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.start h3{
+    text-align: center;
+}
+
+.start p{
+    text-align:center;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

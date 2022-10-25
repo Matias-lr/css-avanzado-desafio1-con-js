@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>flexbox</title>
+</head>
+<body>
+    <section class="chat-container">
+        <aside class="sidebar">
+            <nav class="profile-wrapper">
+                <ul class="profile">
+                    <li class="profile-data">
+                        <figure class="avatar">
+                            <img src="./assets/img/batman.png" alt="batman">
+                        </figure>
+                        <div class="wrapper">
+                            <h1 class="name"> Matias </h1>
+                            <p class="status">Activo ahora</p>
+                        </div>
+                    </li>
+                    <li class="action-bar">
+                        <button class="action-btn message">
+                            <i class="action-icon">
+                                <img src="./assets/img/batman.png" alt="">
+                            </i>
+                        </button>
+                        <button class="action-btn menu">
+                            <i class="action-icon">
+                                <img src="./assets/img/batman.png" alt="">
+                            </i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="dialog-menu">
+                <button class="btn-chat">
+                    Nuevo chat
+                </button>
+                <ul class="chats" id="chats">
+                    <div class="loader-wrapper">
+                        <div class="loader"></div>
+                    </div>
+                </ul>
+            </nav>
+        </aside>
+        <main class="dialog-box" id="dialog-box">
+            <article class="start">
+                <figure class="logo">
+                    <img src="./assets/img/batman.png" alt="">
+                </figure>
+                <h3>comienza a ver el anime</h3>
+                <p>haz click en un anime para 
+                conocer sus datos</p>
+            </article>
+        </main>
+    </section>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
